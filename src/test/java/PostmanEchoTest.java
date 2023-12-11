@@ -8,10 +8,10 @@ public class PostmanEchoTest {
 
     @Test
     public void shouldReturnData() {
-        var text = "some value";
+        var text = "some values";
         given()
                 .baseUri("https://postman-echo.com")
-                .body("some value")
+                .body("some values")
                 .when()
                 .post("/post")
                 .then()
